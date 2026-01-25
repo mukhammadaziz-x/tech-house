@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To'lov | Tech House</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html"><img src="assets/img/logo.png" class="logo" alt="Tech House logo"></a>
+
+        <div>
+            <ul class="navbar">
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">Biz haqimizda</a></li>
+                <li><a href="index.html#membership">A'zolik</a></li>
+                <li><a href="contact.html">Bog'lanish</a></li>
+                <li><a class="active" href="cart.html"><i class="ri-shopping-bag-4-line"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="form-details" class="section-p1">
+        <form action="" onsubmit="alert('Buyurtmangiz qabul qilindi! Tezz orada operatorimiz bog\'lanadi.'); return false;">
+            <span>BUYURTMANI RASMIYLASHTIRISH</span>
+            <h2>Yetkazib berish ma'lumotlari</h2>
+            <input type="text" placeholder="To'liq ismingiz" required>
+            <input type="text" placeholder="Telefon raqamingiz" required>
+            <input type="text" placeholder="Manzilingiz (Shahar, tuman, ko'cha, uy)" required>
+            
+            <h3>Yetkazib berish usuli</h3>
+            <div style="margin: 10px 0;">
+                <input type="radio" id="delivery" name="method" value="delivery" checked style="width: auto; margin-right: 10px;">
+                <label for="delivery">Uyga yetkazib berish</label>
+            </div>
+            <div style="margin: 10px 0;">
+                <input type="radio" id="pickup" name="method" value="pickup" style="width: auto; margin-right: 10px;">
+                <label for="pickup">Do'kondan olib ketish</label>
+            </div>
+
+            <h3>To'lov usuli</h3>
+            <div style="margin: 10px 0;">
+                <input type="radio" id="cash" name="payment" value="cash" checked style="width: auto; margin-right: 10px;">
+                <label for="cash">Naqd pul yoki karta (qabul qilinganda)</label>
+            </div>
+            <div style="margin: 10px 0;">
+                <input type="radio" id="online" name="payment" value="online" style="width: auto; margin-right: 10px;">
+                <label for="online">Onlayn to'lov (Payme / Click)</label>
+            </div>
+
+            <button class="normal">Buyurtma berish</button>
+        </form>
+
+        <div id="subtotal" style="width: 30%; height: fit-content;">
+            <h3>Sizning buyurtmangiz</h3>
+            <table>
+                <tr>
+                    <td>Mahsulotlar soni</td>
+                    <td>2 ta</td>
+                </tr>
+                <tr>
+                    <td>Yetkazib berish</td>
+                    <td>0 so'm</td>
+                </tr>
+                <tr>
+                    <td><strong>Jami</strong></td>
+                    <td><strong>15 499 000 so'm</strong></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="assets/img/logo.png" alt="">
+            <h4>Bog'lanish</h4>
+            <p><strong>Manzil: </strong> Toshkent shahri, Chilonzor tumani, 12-mavze</p>
+            <p><strong>Telefon: </strong> +998 71 123 45 67</p>
+            <p><strong>Ish vaqti: </strong> 09:00 - 20:00, Du - Ya</p>
+        </div>
+        <div class="copyright">
+            <p>© 2026 Tech House - Barcha huquqlar himoyalangan</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
